@@ -1,3 +1,4 @@
+import 'dart:io';
 /// Enum to represent different types of environments.
 enum EnvironmentType {
   /// Local environment.
