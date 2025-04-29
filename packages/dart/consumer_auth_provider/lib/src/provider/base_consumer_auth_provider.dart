@@ -44,4 +44,9 @@ class BaseConsumerAuthProvider implements ConsumerAuthProviderInterface {
   bool _isTokenExpired(String token) {
     return JwtDecoder.isExpired(token);
   }
+
+  @override
+  Future<({String accessToken, List? authorizationDetails})> exchangePreAuthCodeForToken({required String tokenEndpoint, required String preAuthCode, String? txCode}) {
+    return _cisTokenProvider.exchangePreAuthCodeForToken(tokenEndpoint: tokenEndpoint, preAuthCode: preAuthCode, txCode: txCode);
+  }
 }
