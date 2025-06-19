@@ -67,7 +67,7 @@ const projectScopedToken = await authProvider.fetchProjectScopedToken()
 This is step is required, as python package is not published to pypi.org yet
 
 ```bash
-git clone git@github.com:affinidi/affinidi-tdk.git
+git clone git@github.com:marat-affinidi/affinidi-tdk.git
 cd packages/auth-provider/
 npm i --prefix .
 npm run build

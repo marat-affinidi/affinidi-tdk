@@ -16,8 +16,8 @@
     </license>
   </licenses>
   <scm>
-    <connection>git@github.com:affinidi/affinidi-tdk.git</connection>
-    <developerConnection>git@github.com:affinidi/affinidi-tdk.git</developerConnection>
+    <connection>git@github.com:marat-affinidi/affinidi-tdk.git</connection>
+    <developerConnection>git@github.com:marat-affinidi/affinidi-tdk.git</developerConnection>
     <url>https://github.com/affinidi/affinidi-tdk</url>
   </scm>
   <developers>
