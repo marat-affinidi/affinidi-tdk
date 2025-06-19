@@ -34,17 +34,10 @@ jobs:
           scope: '@affinidi-tdk'
 
 
-      - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v4
-        with:
-          channel: stable
-          version: 3.27.0
-
-
 
 
       - run: npm ci
       # Generate tag/changelog with semantic release
       # setting parallel higher than one might cause problems with locking git repo
-      - run: npx nx affected  -t semantic-release --parallel=false --base=$BASE_SHA --head=HEAD
+      - run: npx nx run-many  -t semantic-release --parallel=false --base=$BASE_SHA --head=HEAD
         name: semantic release
