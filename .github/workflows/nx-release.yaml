@@ -36,7 +36,7 @@ jobs:
       - run: npm ci
       # Generate tag/changelog with semantic release
       # setting parallel higher than one might cause problems with locking git repo
-      - run: npx nx affected  -t semantic-release --parallel=false --base=$BASE_SHA --head=HEAD
+      - run:  npx nx run-many -p affinidi_tdk_vault_flutter_utils_dart  -t semantic-release  --dryRun   --verbose
         name: semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
