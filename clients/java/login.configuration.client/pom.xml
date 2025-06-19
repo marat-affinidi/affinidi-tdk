@@ -9,8 +9,8 @@
     <url>https://github.com/openapitools/openapi-generator</url>
     <description>Affinidi TDK java client for Affinidi LOGIN CONFIGURATION</description>
     <scm>
-        <connection>git@github.com:affinidi/affinidi-tdk.git</connection>
-        <developerConnection>git@github.com:affinidi/affinidi-tdk.git</developerConnection>
+        <connection>git@github.com:marat-affinidi/affinidi-tdk.git</connection>
+        <developerConnection>git@github.com:marat-affinidi/affinidi-tdk.git</developerConnection>
         <url>https://github.com/affinidi/affinidi-tdk</url>
     </scm>
 
