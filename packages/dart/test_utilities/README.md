@@ -2,7 +2,6 @@
 
 The Affinidi TDK - Utilities package provides the libraries to mock requests for testing.
 
-*This package is still in **EXPERIMENTAL** status.* 
 
 ## Requirements
 
