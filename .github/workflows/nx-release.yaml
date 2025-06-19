@@ -7,6 +7,7 @@ on:
 
 jobs:
   release:
+    environment: main
     concurrency: release
     runs-on: ubuntu-latest
     permissions:
@@ -16,7 +17,6 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -36,7 +36,7 @@ jobs:
       - run: npm ci
       # Generate tag/changelog with semantic release
       # setting parallel higher than one might cause problems with locking git repo
-      - run:  npx nx run-many -p affinidi_tdk_vault_flutter_utils_dart  -t semantic-release  --dryRun   --verbose
+      - run:  npx nx run-many -p affinidi_tdk_vault_flutter_utils_dart  -t semantic-release  --dryRun   --verbose --base=$BASE_SHA --head=HEAD
         name: semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
